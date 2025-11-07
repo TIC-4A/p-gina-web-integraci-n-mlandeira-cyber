@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light Ping Pong - Microbit Robot</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+
+<nav>
+    <a href="#funciona">Cómo Funciona</a>
+    <a href="#product">Product</a>
+    <a href="#componentes">Componentes</a>
+    <a href="#fotos">Videos y Fotos</a>
+</nav>
+
+
+<section id="product">
+    <div class="semicircle"></div>
+
+    <div class="section-content">
+        <h1>Producto MB: Light Ping Pong</h1>
+        <p style="border-left:4px solid red; padding-left:12px;"> Un robot didáctico con micro:bit para aprender electrónica y lógica 
+        que responde al movimiento de la pelota utilizando sensores de luz. Se encuentra ahora mismo EN OFERTA ESPECIAL, con 10% de descuento, reduciendo el precio a $8,99. </p>
+
+        <div class="price-tag">🔥 Solo $8.99!</div>
+        <button id="btn-comprar" class="btn-comprar">Comprar Ahora</button>
+    </div>
+
+    <div class="section-image-area">
+       <img src="Captura de pantalla 2025-11-06 203757.png" alt="">
+    </div>
+</section>
+
+
+<section id="funciona">
+    <div class="semicircle"></div>
+    <div class="section-content">
+        <h2>Cómo Funciona</h2>
+        <p style="border-left:4px solid red; padding-left:12px;">Se descarga el programa “Pong integración” desde MakeCode y se guarda en la Micro:bit. El código hace que la placa detecte señales y active los LEDs o responda a los botones, mostrando cómo la programación controla los componentes del robot.</p>
+    </div>
+    <div class="section-image-area">
+    <img src="como funciona.png" style="width:400px;height:400px;">
+    </div>
+</section>
+
+
+<section id="componentes">
+    <div class="semicircle"></div>
+    <div class="section-content">
+        <h2>Componentes</h2>
+        <p style="border-left:4px solid red; padding-left:12px;">El robot usa una Micro:bit como control principal, conectada a una placa de expansión y una protoboard. En ella se colocan dos botones (reemplazan A y B) y dos LEDs (azul y rojo) que muestran lo que está haciendo el robot. También lleva un módulo de pilas y cables con resistencias para que todo funcione correctamente.</p>
+    </div>
+    <div class="section-image-area">
+
+        <img src="Componentes.png" style="width:400px;height:400px;">
+    </div>
+</section>
+
+
+<section id="fotos">
+    <div class="semicircle"></div>
+    <div class="section-content">
+        <h2>Más Imágenes del Robot</h2>
+        <p style="border-left:4px solid red; padding-left:12px;">En cualquier caso de precisar visualizar cómo se ve el robot, en este apartado se presentan multiples imágenes del mismo, mas otras variedades en cuanto a ensamblado con la protoboard.</p>
+    </div>
+    <div class="section-image-area" style="display: flex; gap:15px;">
+        <img src="otras img.png" style="width:150px;height:150px;">
+        <img src="otras mas img.png" style="width:150px;height:150px;">
+        <img src="ultimas mas img.png" style="width:150px;height:150px;">
+    </div>
+</section>
+
+<div id="modal" class="modal">
+  <div class="modal-contenido">
+    <h3>Realizar Compra</h3>
+
+    <label>Nombre y Apellido:</label>
+    <input type="text" id="nombre">
+
+    <label>email:</label>
+    <input type="email" id="email">
+
+    <label>Método de pago:</label>
+    <select id="pago">
+      <option>Tarjeta</option>
+      <option>Mercado Pago</option>
+      <option>Efectivo</option>
+    </select>
+
+    <div class="modal-botones">
+      <button id="aceptar">Aceptar</button>
+      <button id="cerrar">Cancelar</button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
